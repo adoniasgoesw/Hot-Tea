@@ -157,3 +157,66 @@ body {
         transform: translateY(-300px) scaleX(10) ;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .cup {
+        width: 180px;
+        /* Reduzindo o tamanho do copo */
+        height: 200px;
+        /* Ajustando a altura do copo */
+    }
+
+    .top {
+        height: 55px;
+        /* Ajustando a altura da parte superior */
+    }
+
+    .circle {
+        height: 40px;
+        /* Ajustando a altura do círculo */
+    }
+
+    .handle {
+        right: -35px;
+        top: 20px;
+        /* Ajustando a posição da alça */
+        width: 100px;
+        /* Reduzindo a largura da alça */
+        height: 120px;
+        border: 15px solid #dcdcdc;
+        border-left: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+
+    .plate {
+        width: 300px;
+        /* Reduzindo o tamanho do pires */
+        height: 100px;
+        /* Ajustando a altura do pires */
+        bottom: -35px;
+        left: 50%
+    }
+
+    .plate::before {
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+        /* Ajustando a sombra interna */
+    }
+
+    .plate::after {
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .vapour span {
+        height: 80px;
+        /* Ajustando a altura do vapor */
+        filter: blur(6px);
+        /* Ajustando o blur */
+    }
+}
